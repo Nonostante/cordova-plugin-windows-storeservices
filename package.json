@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-windows-storeservices",
+  "version": "1.0.0",
+  "description": "Provide access to Windows UWP store and engagement services",
+  "author": "NonostanteGames",
+  "license": "MIT",
+  "types": "./typings/cordova-plugin-windows-storeservices.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-windows-storeservices",
+    "platforms": [
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonostante/cordova-plugin--windows-storeservices.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nonostante/cordova-plugin--windows-storeservices/issues"
+  },
+  "homepage": "https://github.com/nonostante/cordova-plugin--windows-storeservices#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "plugin",
+    "cordova-windows",
+    "UWP",
+    "windows store",
+    "engagement"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ]
+}

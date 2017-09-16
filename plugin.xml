@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-windows-storeservices"
+    version="1.0.0">
+	
+    <name>Cordova GameServices plugin</name>
+    <description>Integrate host platform GameServices (PlayGames on Android, GameCenter for iOS, XboxLive for Windows)</description>
+    <author>NonostanteGames</author>	
+    <license>MIT</license>
+    <keywords>cordova,plugin,game services,game,google play games,game center,xbox live</keywords>
+    <repo>https://github.com/nonostante/cordova-plugin-gameservices</repo>
+    <issue>https://github.com/nonostante/cordova-plugin-gameservices/issues</issue>	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+ 		
+    <js-module src="www/windowsStoreServices.js" name="WindowsStoreServices">
+        <clobbers target="window.storeServices" />
+    </js-module>
+
+	<!-- windows -->
+	<platform name="windows">
+		<js-module src="src/windows/windowsStoreServicesProxy.js" name="WindowsStoreServicesProxy">
+            <merges target="" />
+        </js-module>	
+
+		<lib-file src="Microsoft.Services.Store.Engagement, Version=10.0" target="windows" versions="10" />        
+	</platform>
+</plugin>
